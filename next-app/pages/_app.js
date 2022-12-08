@@ -30,7 +30,7 @@ const { chains, provider } = configureChains(
 )
 
 const { connectors } = getDefaultWallets({
-  appName: 'Instagram',
+  appName: 'Ebay',
   chains,
 })
 

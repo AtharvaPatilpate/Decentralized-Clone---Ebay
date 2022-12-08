@@ -1,7 +1,7 @@
 import ContractABI from './Ebay.json'
 import Web3 from 'web3'
 
-export const address = '0xYourDeployedAddress'
+export const address = '0x3c5d2abc15E7e3fc57a7A7e090030fD55dd83944'
 
 export const createContract = () => {
   const { ethereum } = window

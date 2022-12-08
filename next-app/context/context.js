@@ -67,13 +67,13 @@ export const AppProvider = ({ children }) => {
   const buyProduct = async id => {
     if (contract) {
       try {
-        const price = await contract.methods.products(id).call()
+        const product = await contract.methods.products(id).call()
 
         await contract.methods.purchaseItem(id).send({
           from: userAddress,
           gas: 3000000,
           gasPrice: null,
-          value: price['price'],
+          value: product['price'],
         })
       } catch (error) {
         console.error(error)
